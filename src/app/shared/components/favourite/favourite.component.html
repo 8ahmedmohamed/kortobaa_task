@@ -1,0 +1,9 @@
+<div style="cursor: pointer;">
+  <div *ngIf="heart==0">
+    <span class="fa fa-heart" [class.notchecked]="heart==0" (click)="changeFavourite()"></span>
+  </div>
+
+  <div *ngIf="heart==1">
+    <span class="fa fa-heart" [class.checked]="heart==1" (click)="changeFavourite()"></span>
+  </div>
+</div>

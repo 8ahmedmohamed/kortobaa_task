@@ -1,0 +1,170 @@
+.all {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Cairo';
+  color: #302CA2;
+
+}
+
+.btn:hover {
+  border-color: transparent !important;
+}
+
+.all-products-btn {
+  font-family: 'Cairo';
+  font-weight: bold;
+  font-size: 14pt;
+  color: #302CA2;
+  border: 1px solid #302CA2;
+  width: 125px;
+  padding: 5px;
+}
+
+.all-products-btn:hover {
+  color: #EFEEF8;
+  background-color: #302CA2;
+  border: 1px solid #302CA2;
+}
+
+.line {
+  border-bottom: 1px solid #C7C0D5;
+  width: 1000px;
+}
+
+.wasl {
+  font-size: 16pt;
+  color: #032326;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  direction: rtl;
+  margin: 10px;
+  border: none;
+  width: 18rem;
+}
+
+.card-img-overlay {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: var(--bs-card-img-overlay-padding);
+  border-radius: var(--bs-card-inner-border-radius);
+}
+
+.add-to-compare span {
+  font-family: 'Cairo';
+  font-weight: normal;
+  font-size: 10pt;
+  border-radius: 5px;
+  background-color: #5A4C7A;
+  color: #FFFFFF;
+  padding: 3px 15px;
+  cursor: pointer;
+  position: absolute;
+  top: -9px;
+  right: 4px;
+}
+
+.add-to-compare{
+  display: none;
+}
+
+.compare-btn{
+  height: fit-content;
+}
+
+.compare-btn:hover .add-to-compare{
+  display: block;
+}
+
+.gdid{
+  height: fit-content;
+}
+
+.gdid span {
+  font-family: 'Cairo';
+  font-weight: normal;
+  font-size: 10pt;
+  border-radius: 20px;
+  background-color: #23104E;
+  color: #FFFFFF;
+  padding: 3px 15px;
+  cursor: pointer;
+}
+
+.card-body {
+  z-index: 9999;
+  font-family: 'Cairo';
+  font-weight: bold;
+  padding: 16px 5px;
+}
+
+.card-text {
+  font-weight: normal;
+}
+
+
+.price {
+  display: block;
+  direction: rtl;
+  font-weight: bold;
+}
+
+.cardfooter {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.cart-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 155px;
+  height: 40px;
+  font-family: 'Cairo';
+  font-weight: normal;
+  font-size: 16pt;
+  color: #302CA2;
+  background-color: #EFEEF8;
+  border-radius: 0.175rem;
+  padding: 0;
+}
+
+.cart-count button{
+  border: transparent;
+  margin: 0px 20px;
+}
+
+.cart-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 155px;
+  height: 40px;
+  font-family: 'Cairo';
+  font-weight: normal;
+  font-size: 14pt;
+  color: #EFEEF8;
+  background-color: #302CA2;
+  padding: 0;
+}
+
+.cart-btn:hover {
+  color: #302CA2;
+  background-color: #EFEEF8;
+}
+
+.cart-btn img {
+  margin-left: 15px;
+}

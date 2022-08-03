@@ -1,0 +1,103 @@
+<div class="all">
+  <div><a class="btn all-products-btn"><span>عرض الكل</span></a></div>
+  <div class="line"></div>
+  <div><span class="wasl">وصل حديثا</span></div>
+</div>
+
+<div class="products row">
+    <div class="card shadow-sm" *ngFor="let product of productArray">
+      <div>
+
+      </div>
+      <img src="{{product.img}}" class="card-img-top" alt="...">
+      <div class="card-img-overlay">
+        <a href="" class="compare-btn">
+          <img src="../../../../assets/images/compare_arrows_black_24dp.png" alt="">
+          <div class="add-to-compare"><span>أضف للمقارنة</span></div>
+        </a>
+        <div class="gdid"><span>جديد</span></div>
+      </div>
+      <div class="card-body">
+        <p class="card-title">{{product.title}}</p>
+        <app-rating [stars]="4"></app-rating>
+        <p class="card-text">{{product.description}}</p>
+        <span class="price">{{product.price}} ج.م</span>
+        <div class="cardfooter">
+          <button class="btn cart-btn" *ngIf="product.qnt==0" (click)="toggleCart(product.qnt,product.id)">
+            <img src="../../../../assets/images/add_shopping_cart-black-18dp.png" alt="">
+            <span>أضف للسلة</span>
+          </button>
+          <div class="cart-count" *ngIf="product.qnt>0">
+            <button class="btn" (click)="addToCart(product.qnt,product.id)">+</button>
+            <span>{{product.qnt}}</span>
+            <button class="btn" (click)="removeFromCart(product.qnt,product.id)">-</button>
+          </div>
+          <a href="" class="btn share-btn"><img src="../../../../assets/images/share-24px.png" alt=""></a>
+          <app-favourite></app-favourite>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="card shadow-sm">
+      <img src="../../../../assets/images/pic-2.png" class="card-img-top" alt="...">
+      <div class="card-img-overlay">
+        <a href="" class="compare-btn">
+          <img src="../../../../assets/images/compare_arrows_black_24dp.png" alt="">
+          <div class="add-to-compare"><span>أضف للمقارنة</span></div>
+        </a>
+        <div class="gdid"><span>جديد</span></div>
+      </div>
+      <div class="card-body">
+        <p class="card-title">تيشيرت-كم طويل-آرت وير-نسائي-ملابس</p>
+        <app-rating [stars]="4"></app-rating>
+        <p class="card-text">تيشيرت-كم طويل-آرت وير-نسائي-ملابس تيشيرت-كم طويل-آرت وير-نسائي-ملابس</p>
+        <span class="price">90.00 ج.م</span>
+        <div class="cardfooter">
+          <a href="" class="btn cart-btn"><img src="../../../../assets/images/add_shopping_cart-black-18dp.png" alt=""><span>أضف للسلة</span></a>
+          <a href="" class="btn share-btn"><img src="../../../../assets/images/share-24px.png" alt=""></a>
+          <app-favourite></app-favourite>
+        </div>
+      </div>
+    </div>
+    <div class="card shadow-sm">
+      <img src="../../../../assets/images/pic-1.png" class="card-img-top" alt="...">
+      <div class="card-img-overlay">
+        <a href="" class="compare-btn">
+          <img src="../../../../assets/images/compare_arrows_black_24dp.png" alt="">
+          <div class="add-to-compare"><span>أضف للمقارنة</span></div>
+        </a>
+        <div class="gdid"><span>جديد</span></div>
+      </div>
+      <div class="card-body">
+        <p class="card-title">تيشيرت-كم طويل-آرت وير-نسائي-ملابس</p>
+        <app-rating [stars]="4"></app-rating>
+        <p class="card-text">تيشيرت-كم طويل-آرت وير-نسائي-ملابس تيشيرت-كم طويل-آرت وير-نسائي-ملابس</p>
+        <span class="price">90.00 ج.م</span>
+        <div class="cardfooter">
+          <a href="" class="btn cart-btn"><img src="../../../../assets/images/add_shopping_cart-black-18dp.png" alt=""><span>أضف للسلة</span></a>
+          <a href="" class="btn share-btn"><img src="../../../../assets/images/share-24px.png" alt=""></a>
+          <app-favourite></app-favourite>
+        </div>
+      </div>
+    </div>
+    <div class="card shadow-sm">
+      <img src="../../../../assets/images/pic.png" class="card-img-top" alt="...">
+      <div class="card-img-overlay">
+        <a href="" class="compare-btn">
+          <img src="../../../../assets/images/compare_arrows_black_24dp.png" alt="">
+          <div class="add-to-compare"><span>أضف للمقارنة</span></div>
+        </a>
+        <div class="gdid"><span>جديد</span></div>
+      </div>
+      <div class="card-body">
+        <p class="card-title">تيشيرت-كم طويل-آرت وير-نسائي-ملابس</p>
+        <app-rating [stars]="4"></app-rating>
+        <p class="card-text">تيشيرت-كم طويل-آرت وير-نسائي-ملابس تيشيرت-كم طويل-آرت وير-نسائي-ملابس</p>
+        <span class="price">90.00 ج.م</span>
+        <div class="cardfooter">
+          <a href="" class="btn cart-btn"><img src="../../../../assets/images/add_shopping_cart-black-18dp.png" alt=""><span>أضف للسلة</span></a>
+          <a href="" class="btn share-btn"><img src="../../../../assets/images/share-24px.png" alt=""></a>
+          <app-favourite></app-favourite>
+        </div>
+      </div>
+    </div> -->
+</div>

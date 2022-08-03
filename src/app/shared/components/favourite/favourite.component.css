@@ -1,0 +1,15 @@
+.notchecked {
+  color: black;
+}
+
+.notchecked::before{
+  font-size: 20px;
+}
+
+.checked {
+  color: red;
+}
+
+.checked::before{
+  font-size: 20px;
+}
