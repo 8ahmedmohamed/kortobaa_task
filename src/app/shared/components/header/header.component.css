@@ -113,6 +113,7 @@ input::placeholder {
   align-items: center;
   font-size: 14pt;
   font-family: 'Cairo';
+  text-align: center;
 }
 
 .col a{
@@ -181,4 +182,27 @@ input::placeholder {
   'wght' 400,
   'GRAD' 0,
   'opsz' 48
+}
+
+
+
+@media screen and (max-width:1024px) {
+  .logo{
+    width: 17%;
+  }
+  .cart-btn{
+    font-size: 11pt;
+  }
+}
+@media screen and (max-width:480px) {
+  .logo{
+    width: 30%;
+  }
+  .col{
+    width: 90px;
+    font-size: 11pt !important;
+  }
+  .dropbtn{
+    font-size: 11pt;
+  }
 }

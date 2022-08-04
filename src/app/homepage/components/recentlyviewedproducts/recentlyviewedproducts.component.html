@@ -3,7 +3,7 @@
 <div class="products row">
   <div class="card shadow-sm" *ngFor="let product of productArray">
     <div class="row">
-      <div class="col-md-6" style="position: relative;">
+      <div class="col-md-5" style="position: relative;">
         <img src="{{product.img}}" class="card-img-top" alt="...">
         <div class="card-img-overlay">
           <a href="" class="compare-btn">
@@ -15,7 +15,7 @@
       </div>
 
 
-      <div class="col-md-6" style="z-index: 999999999;">
+      <div class="col-md-7" style="z-index: 999999999;">
         <div class="card-body">
           <p class="card-title">{{product.title}}</p>
           <p class="card-text">{{product.description}}</p>

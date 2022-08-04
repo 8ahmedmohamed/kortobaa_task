@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './../app-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CarouselComponent } from './components/carousel/carousel.component';
@@ -5,27 +6,20 @@ import { RecentlyproductsComponent } from './components/recentlyproducts/recentl
 import { RecentlyviewedproductsComponent } from './components/recentlyviewedproducts/recentlyviewedproducts.component';
 import { HomeComponent } from './components/home/home.component';
 import { SharedModule } from '../shared/shared.module';
-import { RouterModule } from '@angular/router';
-import { ActivatedRoute } from '@angular/router';
-
-
 
 @NgModule({
   declarations: [
     CarouselComponent,
     RecentlyproductsComponent,
     RecentlyviewedproductsComponent,
-    HomeComponent
+    HomeComponent,
   ],
-  imports: [
-    CommonModule,
-    SharedModule
-  ],
+  imports: [CommonModule, SharedModule, AppRoutingModule],
   exports: [
     CarouselComponent,
     RecentlyproductsComponent,
     RecentlyviewedproductsComponent,
-    HomeComponent
-  ]
+    HomeComponent,
+  ],
 })
-export class HomepageModule { }
+export class HomepageModule {}

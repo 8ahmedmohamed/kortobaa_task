@@ -1,13 +1,16 @@
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid first-nav" style="direction: rtl;">
-      <a class="logo" href="#"><img src="../../../../assets/images/Path 224.png" alt=""></a>
+    <a class="logo" [routerLink]="['']" routerLinkActive="router-link-active"><img
+        src="../../../../assets/images/Path 224.png" alt=""></a>
 
-        <form class="d-flex search-input">
-          <button class="btn search-btn" type="submit"><img src="../../../../assets/images/search_icon_152764.png" alt=""></button>
-          <input class="form-control" type="search" placeholder="عم تبحث ؟" aria-label="Search">
-        </form>
-        <button class="btn profile-btn mx-3"><img src="../../../../assets/images/person-24px.png" alt=""></button>
-        <button class="btn cart-btn"><span>سلة التسوق</span> <img src="../../../../assets/images/shopping_cart-24px.png" alt=""> <span class="cart-count">{{cartCount}}</span></button>
+    <form class="d-flex search-input">
+      <button class="btn search-btn" type="submit"><img src="../../../../assets/images/search_icon_152764.png"
+          alt=""></button>
+      <input class="form-control" type="search" placeholder="عم تبحث ؟" aria-label="Search">
+    </form>
+    <button class="btn profile-btn mx-3"><img src="../../../../assets/images/person-24px.png" alt=""></button>
+    <button class="btn cart-btn"><span>سلة التسوق</span> <img src="../../../../assets/images/shopping_cart-24px.png"
+        alt=""> <span class="cart-count">{{cartCount}}</span></button>
   </div>
 
   <div class="container-fluid second-nav" style="direction: rtl;">

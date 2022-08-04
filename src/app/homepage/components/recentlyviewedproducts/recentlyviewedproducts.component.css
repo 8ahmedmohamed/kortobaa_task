@@ -20,10 +20,16 @@
   border: none;
 }
 
+.card .card-img-top {
+  margin: auto;
+  display: block;
+}
+
 .card-img-overlay {
   display: flex;
   justify-content: space-between;
   position: absolute;
+  height: fit-content;
   top: 0;
   right: 0;
   bottom: 0;
@@ -95,7 +101,7 @@
   display: flex;
   margin-top: 10px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .cart-btn {
@@ -117,3 +123,10 @@
   background-color: #EFEEF8;
 }
 
+@media screen and (max-width:1024px) {
+  .card .card-img-top {
+    margin: auto;
+    width: 200px;
+    display: block;
+  }
+}

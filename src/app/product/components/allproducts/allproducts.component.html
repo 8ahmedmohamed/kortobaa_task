@@ -1,1 +1,34 @@
-<p>allproducts works!</p>
+<div class="container">
+  <div class="products">
+    <div class="card shadow-sm" *ngFor="let product of productArray">
+      <img src="{{product.img}}" class="card-img-top" alt="...">
+      <div class="card-img-overlay">
+        <a href="" class="compare-btn">
+          <img src="../../../../assets/images/compare_arrows_black_24dp.png" alt="">
+          <div class="add-to-compare"><span>أضف للمقارنة</span></div>
+        </a>
+        <div class="gdid"><span>جديد</span></div>
+      </div>
+      <div class="card-body">
+        <p class="card-title">{{product.title}}</p>
+        <app-rating [stars]="4"></app-rating>
+        <p class="card-text">{{product.description}}</p>
+        <span class="price">{{product.price}} ج.م</span>
+        <div class="cardfooter">
+          <button class="btn cart-btn" *ngIf="product.qnt==0" (click)="toggleCart(product.qnt,product.id)">
+            <img src="../../../../assets/images/add_shopping_cart-black-18dp.png" alt="">
+            <span>أضف للسلة</span>
+          </button>
+          <div class="cart-count" *ngIf="product.qnt>0">
+            <button class="btn" (click)="addToCart(product.qnt,product.id)">+</button>
+            <span>{{product.qnt}}</span>
+            <button class="btn" (click)="removeFromCart(product.qnt,product.id)">-</button>
+          </div>
+          <a href="" class="btn share-btn"><img src="../../../../assets/images/share-24px.png" alt=""></a>
+          <app-favourite></app-favourite>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

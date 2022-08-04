@@ -40,6 +40,7 @@
 .products {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -49,10 +50,17 @@
   width: 18rem;
 }
 
+.card .card-img-top {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}
+
 .card-img-overlay {
   display: flex;
   justify-content: space-between;
   position: absolute;
+  height: fit-content;
   top: 0;
   right: 0;
   bottom: 0;
@@ -75,19 +83,19 @@
   right: 4px;
 }
 
-.add-to-compare{
+.add-to-compare {
   display: none;
 }
 
-.compare-btn{
+.compare-btn {
   height: fit-content;
 }
 
-.compare-btn:hover .add-to-compare{
+.compare-btn:hover .add-to-compare {
   display: block;
 }
 
-.gdid{
+.gdid {
   height: fit-content;
 }
 
@@ -141,7 +149,7 @@
   padding: 0;
 }
 
-.cart-count button{
+.cart-count button {
   border: transparent;
   margin: 0px 20px;
 }
